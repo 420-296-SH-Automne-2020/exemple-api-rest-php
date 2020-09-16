@@ -7,9 +7,6 @@ GET /students/{id}
 POST /students
 */
 
-error_reporting(-1);
-ini_set('display_errors', 'On');
-
 function sendResponse($code, $body = null) {
   $statusCodes = array(
     200 => "200 OK",
