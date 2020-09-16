@@ -17,7 +17,7 @@ function sendResponse($code, $body = null) {
   );
 
   header('HTTP/1.1 '. $statusCodes[$code]);
-	header('Content-Type: application/json; charset=utf-8');
+  header('Content-Type: application/json; charset=utf-8');
   if ($body) {
     $jsonBody = json_encode($body);
     echo $jsonBody;
